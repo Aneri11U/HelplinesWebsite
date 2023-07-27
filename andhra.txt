@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script>
+//         (function()
+// {
+//   let buttons = document.getElementsByTagName('Button');
+//   for(let i = 0; i < buttons.length; i++)
+//   {
+//     let button = buttons[i];
+//     button.addEventListener('click', e =>
+//     {
+//       let button = e.target;
+//       let number = button.parentNode.parentNode.getElementsByClassName('number')[0].innerHTML;
+//       let text = document.createElement('input');
+//       text.setAttribute('type', 'phonenumber');
+//       text.value = number;
+//       document.body.appendChild(text);
+//       text.select();
+//       document.execCommand('copy');
+//       document.body.removeChild(text);
+//     });
+//   }
+// })();
+
+    
+
+// var copyTarget = document.getElementsByClassName('js-copy-to-clip');
+// if(copyTarget.length > 0) {
+//   copyTarget[0].addEventListener('contentCopied', function(event) {
+//     // success
+//   });
+
+//   copyTarget[0].addEventListener('contentNotCopied', function(event) {
+//     // error
+//   });
+// }
+
+
+    </script>
+</head>
+<body>
+    <section id="d1">
+        <a href="#"><img src="Helpline Numbers.png" style="height:110px;width:250px"></a>
+        <ul id="nev">
+        <!-- <li></a></li> -->
+            <li><a href="project.html">Home</a></li>
+            <!-- <li><a href="Register.html">Register</a></li>
+            <li><a href="signup.html">Log in</a></li> -->
+            <!-- <li><a href="importantnumbers.html" class=""></a> -->
+            <li>
+            <div class="dropdown">
+                <button class="dropbtn" id="now">Important Numbers
+                    <i class="fa fa-caret-down"></i> 
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="importantnumbers.html" class="now">Important Numbers</a>
+                    <a href="#">Bird and Animal Helpline</a>
+                    <a href="#">De Addiction Helpline</a>
+                    <a href="#">Food Helpline</a>
+                    <a href="#">Senior Citizen Helpline</a>
+                    <a href="#">Men Helpline</a>
+                    <a href="#">Women Helpline</a>
+                    <a href="#">Child Helpline</a>
+                    <a href="#">Helplines for Differently Abled People</a>
+                    <a href="#">World Wide Helpline</a>
+                    <a href="#">Indian Railways</a>
+                    <a href="#">Suicide Helpline</a>
+                    <a href="#">Blood Banks</a>
+                    <a href="#">Ambulance Helpline</a>
+                    <!-- <a href="#">Food Helpline</a> -->
+                  </div>
+            </div>
+            </li>
+            <li>
+            <div class="dropdown">
+                <button class="dropbtn">Statewise Helpline
+                    <i class="fa fa-caret-down"></i> 
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="statewise.html">Statewise Helpline</a>
+                    <a href="#">Andhra Pradesh</a>
+                    <a href="#">Arunachal Pradesh</a>
+                    <a href="#">Assam</a>
+                    <a href="#">Bihar</a>
+                    <a href="#">Chandigrah</a>
+                    <a href="#">Chatishgrah</a>
+                    <a href="#">Delhi</a>
+                    <a href="#">Goa</a>
+                    <a href="#">Gujarat</a>
+                    <a href="#">Haryana</a>
+                    <a href="#">Himachal Pradesh</a>
+                    <a href="#">Jharkhand</a>
+                    <a href="#">Jammu Kashmir</a>
+                    <a href="#">Karnataka</a>
+                    <a href="#">kerala</a>
+                    <a href="#">Maharashtra</a>
+                    <a href="#">Manipur</a>
+                    <a href="#">Madhya Pradesh</a>
+                    <a href="#">Meghalaya</a>
+                    <a href="#">Mizoram</a>
+                    <a href="#">Nagaland</a>
+                    <a href="#">Odisha</a>
+                    <a href="#">Panjab</a>
+                    <a href="#">Rajasthan</a>
+                    <a href="#">Sikkim</a>
+                    <a href="#">Tamil Nadu</a>
+                    <a href="#">Telangana</a>
+                    <a href="#">Tripura</a>
+                    <a href="#">Uttar Pradesh</a>
+                    <a href="#">Uttarakhand</a>
+                    <a href="#">West Bengal</a>
+                    <!-- <a href="#">Food Helpline</a> -->
+                  </div>
+            </div>
+            </li>
+            <!-- <li><a href="statewise.html">Statewise Helpline</a></li> -->
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="Cart.html"><i class="fa fa-shopping-cart"></i></a></li>  -->
+            <!-- <li><a href="Cart.html">Cart</a></li>  -->
+            <!-- <li><a href="Cart.html"><img src="cart icon.jpeg" height="10%" width="15%"></a></li> -->
+        </ul>
+    </section>
+    <section id="impnum">
+        <label id="start">Andhra Pradesh Helpline Numbers</label>
+    <div ng-app="AP" ng-controller="Ctrl-AP">
+        <h2 id="findnum"><i class="fa fa-search" style="color:#100c35;"></i>&nbsp;<input type="text" ng-model="searchText" placeholder="Search..." class="inp"></h4>
+        <div>
+        <table border="1" id="table">
+            <tr>
+                <th>Helplines</th>
+                <th>Helpline Number</th>
+                <th>Call on click</th>
+            </tr>
+            
+           <tr ng-repeat="c in andhra| filter:searchText">
+                <td width="30%">{{c.helpline1}}</td>
+                <td width="15%">{{c.number1}}</td>
+                <td width="15%"><a href="tel:{{c.number1}}"><button>Click to call</button></a></td>
+                <!-- <td><button id="copy" onclick="fun()">Click to Copy</button></td> -->
+            </tr>
+
+        </table>
+    </div>
+    </div>
+</section>
+    <script src = 
+	"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">
+	</script>
+    <script src="ap_js.js"></script>
+    <script>
+        
+
+        // HTMLButton.onclick = function() {
+        // HTMLBox.select();
+        // document.execCommand("copy");
+        // HTMLButton.innerText = "Codes Copied"
+        // // }
+        // function fun(){
+//               let buttons = document.getElementsByTagName('Button');
+//   for(let i = 0; i < buttons.length; i++)
+//   {
+//     let button = buttons[i];
+//     button.addEventListener('click', e =>
+//     {
+//       let button = e.target;
+//       let number = button.parentNode.parentNode.getElementById('content-to-copy').innerHTML;
+//       let text = document.createElement('input');
+//       text.setAttribute('type', 'text');
+//       text.value = number;
+//       document.body.appendChild(text);
+//       text.select();
+//       document.execCommand('copy');
+//       document.body.removeChild(text);
+//     });
+// //   }
+//             var HTMLBox = document.getElementById("content-to-copy");
+//             var HTMLButton = document.getElementById("Copy");
+//             HTMLBox.select();
+//             document.execCommand("copy");
+//             HTMLButton.innerText = "Codes Copied";
+//         }
+    </script>
+</body>
+</html>
